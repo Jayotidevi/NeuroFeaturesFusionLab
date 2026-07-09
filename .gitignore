@@ -80,3 +80,4 @@ results/
 
 # Temporary
 *.tmp
+*.egg-info/
