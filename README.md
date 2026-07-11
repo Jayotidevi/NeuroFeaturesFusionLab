@@ -24,4 +24,7 @@ The primary objectives of NeuroFeaturesFusion are:
 - Enable modality-specific foundation models.
 - Support flexible multimodal fusion architectures.
 - Provide reusable software components for research and experimentation.
-- Improve cross-dataset generalization.
+![NeuroFeaturesFusion Framework Architecture](docs/images/framework_overview.png)
+
+For more details, see:
+[Current Architecture Documentation](docs/architecture/current_architecture.md)- Improve cross-dataset generalization.
