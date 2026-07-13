@@ -2,8 +2,7 @@
 
 A modular, extensible, and dataset-independent deep learning framework for multimodal biomedical data harmonization, representation learning, fusion, and evaluation.
 > NeuroFeaturesFusion is currently under active development. The framework architecture and core abstractions are being implemented incrementally following software engineering best practices. Documentation and implementation are updated together as each milestone is completed.
-> ![NeuroFeaturesFusion Framework Architecture]
- docs/images/framework_overview.png 
+> ![NeuroFeaturesFusion Framework Architecture](docs/images/framework_overview.png )
 
 For more details, see:
 [Current Architecture Documentation](docs/architecture/current_architecture.md)- Improve cross-dataset generalization.
