@@ -30,6 +30,7 @@ mypy_cache/
 data/raw/
 data/interim/
 data/processed/
+data/MODMA/
 
 # Models
 models/checkpoints/
