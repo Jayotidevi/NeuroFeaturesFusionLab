@@ -35,6 +35,15 @@ class MODMAConfig:
             self.dataset_root /
             "audio_lanzhou_2015"
         )
+        self.eeg_128_metadata = (
+            self.eeg_128_path /
+            "subjects_information_EEG_128channels_resting_lanzhou_2015.xlsx"
+        )
+
+        self.eeg_3_metadata = (
+        self.eeg_3_path /
+        "subjects_information_EEG_3channels_resting_lanzhou_2015.xlsx"
+        )
 
     def validate(self):
         """
@@ -45,6 +54,8 @@ class MODMAConfig:
         "eeg_128_path": self.eeg_128_path,
         "eeg_3_path": self.eeg_3_path,
         "audio_path": self.audio_path,
+        "eeg_128_metadata": self.eeg_128_metadata,
+        "eeg_3_metadata": self.eeg_3_metadata
     }
 
         for name, path in required_paths.items():

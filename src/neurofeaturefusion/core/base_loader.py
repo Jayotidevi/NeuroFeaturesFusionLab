@@ -17,7 +17,7 @@ A loader is responsible only for data retrieval.
 class BaseLoader(BaseComponent):
 
     def __init__(
-    self,e
+    self,
         dataset_name: str,
         data_path: str,
         config: dict | None = None,
@@ -31,9 +31,20 @@ class BaseLoader(BaseComponent):
     @abstractmethod
     def load(self):
         """
-        Load raw dataset files.
+        Load MODMA raw dataset resources.
+
+        Returns
+        -------
+        dict
+            Paths to available MODMA resources.
         """
-        pass
+
+        return {
+            "eeg_128_path": str(self.modma_config.eeg_128_path),
+            "eeg_3_path": str(self.modma_config.eeg_3_path),
+            "audio_path": str(self.modma_config.audio_path),
+            "metadata_path": str(self.modma_config.metadata_path)
+        }
 
     def validate_source(self):
         """

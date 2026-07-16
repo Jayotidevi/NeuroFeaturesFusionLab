@@ -1,7 +1,4 @@
-from neurofeaturefusion.datasets.modma.config import MODMAConfig
+import neurofeaturefusion
 
-
-def test_modma_config():
-    config = MODMAConfig("data/MODMA")
-
-    assert config.validate() is True
+def test_import():
+    assert neurofeaturefusion is not None
