@@ -24,6 +24,22 @@ class BaseHarmonizer(BaseComponent):
             Harmonized dataset
         """
         pass
+    
+    def update_metadata(self, dataset, report):
+        """
+        Attach harmonization information
+        to dataset metadata.
+        """
+
+        metadata = dataset.get_metadata()
+
+        metadata["harmonization"] = report
+
+        dataset.set_metadata(metadata)
+
+        return dataset
+
+   
 
 
     def validate(self, dataset):
@@ -39,4 +55,5 @@ class BaseHarmonizer(BaseComponent):
         """
         return {
             "name": self.__class__.__name__
-        }
+        
+            }
